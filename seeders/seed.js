@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const db = require('../models');
+const db = require('../models/exerciseModel');
 
 
 const workoutSeed = [
@@ -15,6 +15,7 @@ const workoutSeed = [
         sets: 4,
       },
     ],
+    totalDuration: 10,
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 8)),
@@ -28,6 +29,7 @@ const workoutSeed = [
         sets: 4,
       },
     ],
+    totalDuration: 30,
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 7)),
@@ -41,6 +43,7 @@ const workoutSeed = [
         sets: 4,
       },
     ],
+    totalDuration: 55,
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 6)),
@@ -52,6 +55,7 @@ const workoutSeed = [
         distance: 4,
       },
     ],
+    totalDuration: 70,
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 5)),
@@ -65,6 +69,7 @@ const workoutSeed = [
         sets: 4,
       },
     ],
+    totalDuration: 90,
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 4)),
@@ -78,6 +83,7 @@ const workoutSeed = [
         sets: 4,
       },
     ],
+    totalDuration: 110,
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 3)),
@@ -91,6 +97,7 @@ const workoutSeed = [
         sets: 4,
       },
     ],
+    totalDuration: 140,
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 2)),
@@ -104,6 +111,7 @@ const workoutSeed = [
         sets: 4,
       },
     ],
+    totalDuration:160,
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 1)),
@@ -117,6 +125,7 @@ const workoutSeed = [
         sets: 4,
       },
     ],
+    totalDuration: 180,
   },
 ];
 
