@@ -9,7 +9,7 @@ const app = express();
 
 const routes = require("./controllers")
 
-mongoose.connect('mongodb://localhost/workout');
+mongoose.connect(process.env.MONGODB_URI);
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
